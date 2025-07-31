@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Owais Kitchen Restaurant">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Favicon & Tab-Name -->
+    <link rel="shortcut icon" href="Images/Favicon.webp" type="image/x-icon">
+    <title>Menu | Owais Kitchen Restaurant</title>
+
+    <style>
+      body{
+          background-color: #ffdaa5;
+      }
+      .bg-dark-red {
+        background-color: #590e0e;
+      }
+      .btn-outline-dark-red {
+        border-color: #590e0e;
+        background-color: #590e0e;
+        color: white;
+      }
+      .btn-outline-dark-red:hover {
+        background-color: #b12727;
+        color: white;
+      }
+      .card {
+        border-radius: 10px;
+      }
+      
+      .card{
+        background-color: #590e0e;
+      }
+
+      .card:hover{
+          transition: ease-in 0.3s;
+          background-color: #b12727;
+      }
+
+      .menu-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 10px;
+      }
+      .menu-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(89, 14, 14, 0.1) !important;
+      }
+      .card-title {
+        color: white;
+        margin-bottom: 0.5rem;
+      }
+      .itc {
+          color: white;
+        font-style: italic;
+      }
+    </style>
+  </head>
+    
+  <body>
+
+    <!-- Header -->
+    <header>
+      <div class="text-white rounded-2 p-2 mx-1 my-1 text-center" style="background-color: #590e0e;">
+        <h1 class="display-4" style="font-weight: bolder;">Welcome to Owais Kitchen Restaurant</h1>
+        <p class="lead" style="font-weight: bold;">Delicious meals crafted with love!</p>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg my-1 mx-1 rounded-2 navbar-dark" style="background-color: #590e0e;">
+      <div class="container">
+        <!-- Brand/Logo -->
+        <a class="navbar-brand" href="#">MENU</a>
+        
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="Index.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="special.html">Specials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section class="container my-5">
+      <div class="text-center mb-5">
+        <h1 class="display-4" style="color: #590e0e; font-weight: bold;">Our Delicious Menu</h1>
+        <p class="lead" style="font-weight: bold;">Explore our variety of mouthwatering dishes!</p>
+      </div>
+    
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+        <!-- Row 1 -->
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_tamato_soup.html" class="text-decoration-none">
+              <img src="Images/Tamato_Soup.png" class="card-img-top rounded-5" alt="Tomato Soup">
+              <div class="card-body text-center">
+                <h5 class="card-title">Tomato Soup</h5>
+                <p class="itc">Complimentary</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_garlic_bread.html" class="text-decoration-none">
+              <img src="Images/Garlic_Bread.png" class="card-img-top rounded-5" alt="Garlic Bread">
+              <div class="card-body text-center">
+                <h5 class="card-title">Garlic Bread</h5>
+                <p class="itc">$5.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_caesar_salad.html" class="text-decoration-none">
+              <img src="Images/Caesar_Salad.png" class="card-img-top rounded-5" alt="Caesar Salad">
+              <div class="card-body text-center">
+                <h5 class="card-title">Caesar Salad</h5>
+                <p class="itc">$7.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_vegetable_stir_fry.html" class="text-decoration-none">
+              <img src="Images/Vegetable_Stir_Fry.png" class="card-img-top rounded-5" alt="Vegetable Stir Fry">
+              <div class="card-body text-center">
+                <h5 class="card-title">Vegetable Stir Fry</h5>
+                <p class="itc">$8.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Row 2 -->
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_bruschetta.html" class="text-decoration-none">
+              <img src="Images/Bruschetta.png" class="card-img-top rounded-5" alt="Bruschetta">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bruschetta</h5>
+                <p class="itc">$7.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_cheese_burger.html" class="text-decoration-none">
+              <img src="Images/Cheese_Burger.png" class="card-img-top rounded-5" alt="Cheese Burger">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cheese Burger</h5>
+                <p class="itc">$9.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_margherita_pizza.html" class="text-decoration-none">
+              <img src="Images/Margherita_Pizza.png" class="card-img-top rounded-5" alt="Margherita Pizza">
+              <div class="card-body text-center">
+                <h5 class="card-title">Margherita Pizza</h5>
+                <p class="itc">$10.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_spaghetti_carbonara.html" class="text-decoration-none">
+              <img src="Images/Spaghetti_Carbonara.png" class="card-img-top rounded-5" alt="Spaghetti Carbonara">
+              <div class="card-body text-center">
+                <h5 class="card-title">Spaghetti Carbonara</h5>
+                <p class="itc">$11.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Row 3 -->
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_chicken_wings.html" class="text-decoration-none">
+              <img src="Images/Chicken_Wings.png" class="card-img-top rounded-5" alt="Chicken Wings">
+              <div class="card-body text-center">
+                <h5 class="card-title">Chicken Wings</h5>
+                <p class="itc">$9.49</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_beef_steak.html" class="text-decoration-none">
+              <img src="Images/Beef_Steak.png" class="card-img-top rounded-5" alt="Beef Steak">
+              <div class="card-body text-center">
+                <h5 class="card-title">Beef Steak</h5>
+                <p class="itc">$16.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_grilled_chicken.html" class="text-decoration-none">
+              <img src="Images/Grilled_Chicken.png" class="card-img-top rounded-5" alt="Grilled Chicken">
+              <div class="card-body text-center">
+                <h5 class="card-title">Grilled Chicken</h5>
+                <p class="itc">$12.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_grilled_salmon.html" class="text-decoration-none">
+              <img src="Images/Grilled_Salmon.png" class="card-img-top rounded-5" alt="Grilled Salmon">
+              <div class="card-body text-center">
+                <h5 class="card-title">Grilled Salmon</h5>
+                <p class="itc">$14.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!-- Row 4 -->
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_strawberry_milkshake.html" class="text-decoration-none">
+              <img src="Images/Strawberry_MilkShake.png" class="card-img-top rounded-5" alt="Strawberry Milkshake">
+              <div class="card-body text-center">
+                <h5 class="card-title">Strawberry Milkshake</h5>
+                <p class="itc">$5.49</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_chocolate_lava_cake.html" class="text-decoration-none">
+              <img src="Images/Chocolate_Lava_Cake.png" class="card-img-top rounded-5" alt="Chocolate Lava Cake">
+              <div class="card-body text-center">
+                <h5 class="card-title">Chocolate Lava Cake</h5>
+                <p class="itc">$6.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_coffee.html" class="text-decoration-none">
+              <img src="Images/Coffee.png" class="card-img-top rounded-5" alt="Cappuccino">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cappuccino</h5>
+                <p class="itc">$4.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <div class="col">
+          <div class="card h-100 border-0 rounded-5 shadow-sm menu-card">
+            <a href="menu_ice_cream_sundae.html" class="text-decoration-none">
+              <img src="Images/Ice_Cream_Sundae.png" class="card-img-top rounded-5" alt="Ice Cream Sundae">
+              <div class="card-body text-center">
+                <h5 class="card-title">Ice Cream Sundae</h5>
+                <p class="itc">$5.99</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class=" text-white py-4 mt-5" style="background-color: #590e0e;">
+        <div class="container">
+            <p class="text-center mb-0">
+                &copy; 2025 Owais Kitchen Restaurant | All Rights Reserved By Owais BS(ITE) 103
+            </p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JS Bundle File To Be Load in Last-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous" defer></script>
+  </body>
+</html>    
